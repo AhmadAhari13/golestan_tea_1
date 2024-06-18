@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IranSansLight";
+  src: url(../fonts/IRANSansLight.ttf), format("ttf");
+}
+
+body {
+  font-family: "IranSansLight", sans-serif;
+}
+.telegram .telegram-blue {
+  display: none;
+  color: #74c0fc;
+}
+.telegram .telegram-gray {
+  display: block;
+  color: #b6b6b6;
+}
+.telegram:hover .telegram-blue {
+  display: block;
+}
+.telegram:hover .telegram-gray {
+  display: none;
+}
+.aparat .aparat-pink {
+  display: none;
+  transform: scale(1.5);
+  color: #f04285;
+}
+.aparat .aparat-gray {
+  display: block;
+  transform: scale(1.5);
+  color: #b6b6b6;
+}
+.aparat:hover .aparat-pink {
+  display: block;
+}
+.aparat:hover .aparat-gray {
+  display: none;
+}
+.moon {
+  display: block;
+}
+.sun {
+  display: none;
+}
+.go-down {
+  transform: translateY(-140px);
+  opacity: 0;
+  transition: 2s all;
+}
+.go-up {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 2s all;
+}
+.go-right {
+  transform: translateX(140px);
+  opacity: 0;
+  transition: 2s all;
+}
+.go-left {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 2s all;
+}
+.go-in {
+  transform: scale(0.1);
+  opacity: 0;
+  transition: 2s all;
+}
+.go-out {
+  transform: scale(1);
+  opacity: 1;
+  transition: 2s all;
+}
+.sub-menu {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .mega-menu:hover .sub-menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 710px) {
+  .video-section {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
